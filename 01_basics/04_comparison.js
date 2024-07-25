@@ -16,23 +16,48 @@
 
 // 7 types => String,Number,Boolean,null,undefined,Symbol,BigInt
 
-const id = Symbol(123)
-const anotherId =Symbol(123)
+// const id = Symbol(123)
+// const anotherId =Symbol(123)
 
-console.log(id===anotherId);
+// console.log(id===anotherId);
 
-//Non-Primitive datatype(Reference Datatype)
+// //Non-Primitive datatype(Reference Datatype)
 
-// Array , Objects , Functions
+// // Array , Objects , Functions
 
-const heros = ['karan','vikas']
-let obj = {
-    name:"shiv",
-    age:21
+// const heros = ['karan','vikas']
+// let obj = {
+//     name:"shiv",
+//     age:21
+// }
+
+// const my = function(){
+//     console.log("hello world");
+// }
+
+// console.log(typeof my)
+
+//.....................................................
+
+//Stack(Primitive) , Heap(Non Primitive)
+
+let collegeName = "BSA"
+
+let anothername = collegeName
+anothername = "AKTU"
+
+console.log(anothername);
+console.log(collegeName);
+
+let userOne = {
+    email:"shivkumar@gamil.com",
+    upi:"user123"
 }
 
-const my = function(){
-    console.log("hello world");
-}
+let userTwo = userOne
+userTwo.email = "karan@yahoo.com"
 
-console.log(typeof my)
+console.table([userOne,userTwo])
+
+
+
